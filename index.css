@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Hind;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Hind, monospace;
+}
+
+* {
+  margin: 0;
+}

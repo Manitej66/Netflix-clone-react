@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  font-size: 25px;
+  color: white;
+}
+
+.App {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background-color: black;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.row_item {
+  object-fit: cover;
+  padding: 10px;
+  max-height: 100px;
+  transition: transform 0.45s;
+}
+.row_item:hover {
+  transform: scale(1.08);
+}
+.row_large {
+  max-height: 250px;
+  object-fit: cover;
+  padding: 10px;
+  transition: transform 0.45s;
+}
+
+.row_large:hover {
+  transform: scale(1.08);
+}
+
+.bann {
+  height: 470px;
+  object-fit: contain;
+  linear-gradient: (
+    to bottom,
+    rgba(245, 246, 252, 0.52),
+    rgba(117, 19, 93, 0.73)
+  );
+}
+
+.ban {
+  margin-left: 30px;
+  padding-top: 150px;
+  height: 200px;
+}
+
+.ban_title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.ban_description {
+  width: 50%;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.banner--fadeBottom {
+  linear-gradient: (
+    to bottom,
+    rgba(245, 246, 252, 0.52),
+    rgba(117, 19, 93, 0.73)
+  );
+}
+
+.nav {
+  position: fixed;
+  padding: 17;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+  margin: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .bann {
+    height: 220px;
+  }
+  .ban {
+    margin-left: 30px;
+    padding-top: 50px;
+    height: 150px;
+  }
+
+  .ban_title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .ban_description {
+    width: 80%;
+    line-height: 1.3;
+    font-size: 10px;
+  }
+
+  .row_item {
+    object-fit: cover;
+    padding: 10px;
+    max-height: 100px;
+    transition: transform 0.45s;
+  }
+  .row_item:hover {
+    transform: scale(1.08);
+  }
+  .row_large {
+    max-height: 180px;
+    object-fit: cover;
+    padding: 10px;
+    transition: transform 0.45s;
+  }
+
+  .row_large:hover {
+    transform: scale(1.08);
+  }
+}
